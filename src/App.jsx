@@ -43,14 +43,21 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-50 p-8">
       <div className="max-w-2xl mx-auto space-y-6">
-        
-
         <BlurUpImage
           key={key}
           src={imageUrl}
           placeholderSrc={placeholderUrl}
           alt="美しい山の風景"
         />
+
+        <div className="text-center">
+          <button
+            onClick={handleReload}
+            className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+          >
+            リロード
+          </button>
+        </div>
       </div>
     </div>
   );
